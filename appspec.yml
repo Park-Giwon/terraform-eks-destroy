@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ec2-user/terraform/
+
+hooks:
+  AfterInstall:
+    - location: /scripts/destroy_terraform.sh
+      runas: root
