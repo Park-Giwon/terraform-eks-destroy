@@ -1,1 +1,1 @@
-terraform -chdir=/home/ec2-user/terraform/ destroy -lock-false -auto-approve
+terraform -chdir=/home/ec2-user/terraform/ destroy -lock=false -auto-approve
